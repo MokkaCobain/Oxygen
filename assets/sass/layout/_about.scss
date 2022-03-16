@@ -1,0 +1,69 @@
+#about {
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    
+    // IMAGE DANS ASSETS NON PRISES EN CHARGE MAIS WTF
+    background-image: linear-gradient(
+        rgba(181, 112, 112, 0.6), 
+        rgba(112, 122, 181, 0.6)),
+      url(https://images.unsplash.com/photo-1646058536666-7d4fdf84c0f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+ 
+    /*** Effet parallaxe ***/
+    background-attachment: fixed;
+
+    .container {
+        color : white;
+        // Disposition flex
+        display: flex;
+        
+        h2 {
+            font-size : 4rem;
+            font-weight: 400;
+        }
+
+        p {
+            font-weight: 300;
+        }
+
+        .box-barre {
+            
+            .barre-content {
+                height: 10%;
+
+                .progress {
+                  height: 100%;
+
+                    .progress-bar {
+                        width: 95%;
+                    
+                        
+                        // color: #fff;
+                        object-fit: contain;
+                        transition: width .6s ease;
+                        /*Attribuer une animation */
+                        background-color: #028fcc;
+                        
+                        animation: progesbar 4s ease 1s 1 normal forwards;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**** ANIMATIONS PROGRESS BAR ****/
+
+@keyframes progesbar {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }

@@ -1,0 +1,41 @@
+
+#service {
+    .container {
+        padding: 0;
+        
+        .card {
+            border : none;
+
+            .card-head {
+                // Disposition flex
+                display: flex;
+                justify-content: center;
+                
+                .fas {
+                    padding: 3rem 3rem;
+                    color : white;
+                    background-color: #0dcaf0;
+
+                    &:hover {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+            .card-body {
+                text-align: center;
+            }
+
+        /******** RESPONSIVE ********/
+            hr {
+                @media screen and (max-width: 992px) {
+                    opacity: 0; 
+                }
+            }
+        }
+        .vr {
+            @media screen and (max-width: 992px) {
+                opacity: 0; 
+            } 
+        }
+    }
+}   

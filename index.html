@@ -9,54 +9,51 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <!--STYLE-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!--ICONE-->
+    <script src="https://kit.fontawesome.com/5f98707897.js" crossorigin="anonymous"></script>
+    <!-- <link rel="icon" href="assets/images/favicon.ico"> -->
 </head>
 <body>
     <!--Carousel-->
-    <section id="accueil" class="row-lg"> <!--Hauteur définit dans _carousel.scss-->
+    <section id="accueil" class="row-lg w-100"> <!--Hauteur définit dans _carousel.scss-->
         <div class="col h-100">
             <!--Div qui contient le carousel et ses boutons-->
             <div id="app-carousel" class="carousel slide h-100" data-bs-ride="carousel">
                 <!--Div qui contient toutes les images-->
                 <div class="carousel-inner">
-                    <!--Image 1-->
-                    <div class="carousel-item active">
-                        <img src="https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d29ya3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" class="d-block w-100" alt="Image1">
-                      <!--Titre 1-->
-                        <div class="carousel-caption d-none d-md-block titre">
-                            <div id="titre" class="titre--1">
-                                <h5>First slide label</h5>
+
+                    <!--Titre 1-->
+                    <div id="slideUne" class="carousel-item active">
+                        <div class="carousel-titre">
+                                <h1>First slide <span>label</span></h1>
                                 <p>Some representative placeholder content for the first slide.</p>
-                            </div>
                         </div>
                     </div>
-                    <!--Image 2-->
-                    <div class="carousel-item">
-                        <img src="assets/images/carousel/2.jpg" class="d-block w-100" alt="Image2">
-                      <!--Titre 2-->
-                        <div class="carousel-caption d-none d-md-block titre">
-                            <div class="titre--2">
-                                <h5>Second slide label</h5>
-                                <p>Some representative placeholder content for the second slide.</p>
-                            </div>
+
+                    <!--Titre 2-->
+                    <div id="slideDeux" class="carousel-item">
+                        <div class="carousel-titre">
+                                <h1>Second slide <span>label</span></h1>
+                                <p>Some representative placeholder content for the first slide.</p>
                         </div>
                     </div>
-                    <!--Image 3-->
-                    <div class="carousel-item">
-                        <img src="assets/images/carousel/3.jpg" class="d-block w-100" alt="Image3">
-                      <!--Titre 3-->
-                        <div class="carousel-caption d-none d-md-block titre">
-                            <div class="titre--3">
-                                <h5>Third slide label</h5>
-                                <p>Some representative placeholder content for the third slide.</p>
-                            </div>
-                      </div>
+
+                    <!--Titre 3-->
+                    <div id="slideTrois" class="carousel-item">
+                        <div class="carousel-titre">
+                                <h1>Third slide <span>label</span></h1>
+                                <p>Some representative placeholder content for the first slide.</p>
+                        </div>
                     </div>
-                  </div>
+
+                 </div>
 
                 <!--Indicateurs du carousel (préciser l'id de la div qui contient le carousel)-->
                 <div class="carousel-indicators mb-0"> <!--margin-bottom = mb-->
                     <button type="button" data-bs-target="#app-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
                     <button type="button" data-bs-target="#app-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
                     <button type="button" data-bs-target="#app-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
 
@@ -65,6 +62,7 @@
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                   </button>
+
                   <button class="carousel-control-next" type="button" data-bs-target="#app-carousel" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -75,7 +73,7 @@
     </section>
 
     <!--NavBar-->
-    <section id="nav" class="row">
+    <section id="nav" class="sticky-top w-100">
         <nav id="app-nav" class="navbar navbar-expand-lg navbar-light bg-info">
             <div class="container-fluid">
                 <!--Le logo-->
@@ -110,7 +108,7 @@
                             <a class="nav-link" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact">Contact</a>
+                            <a class="nav-link" href="#contact">Contact</a>
                         </li>
                 </div>
             </div>
@@ -118,111 +116,443 @@
     </section>
 
     <!--Service-->
-    <section id="service" class="bg-danger">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolore eligendi, repellat enim ullam nostrum? Accusamus eius minima eos! Quibusdam fuga atque ipsum perferendis repellat reiciendis voluptates! Nulla, error consectetur!
-        Delectus possimus, accusamus ex nobis non est debitis quis optio consequatur beatae mollitia, velit quod amet soluta laudantium enim ipsum error nisi alias a facere consectetur eveniet. Corporis, exercitationem iure.
-        Error nostrum, perferendis cum saepe tempore quae consequatur voluptate animi consectetur, itaque hic inventore necessitatibus atque dignissimos placeat corporis molestias assumenda. Autem excepturi cupiditate accusamus officiis vel ipsa tempora nam.
-        Quae illo ipsam nostrum id qui sed repellat recusandae quo excepturi blanditiis, rem mollitia, cumque eum nam maxime quisquam hic minus fugiat deleniti. Excepturi, in architecto magni labore fugit cupiditate.
-        Facilis quas facere, cum eos harum culpa rem eligendi quidem magni animi eum odit minima totam. Illo libero nobis ut provident odit quas distinctio, ab facilis dolorum optio voluptas. Ad!
-        Laborum, ea nostrum. Voluptatum odit doloribus laboriosam aspernatur ratione. Doloremque inventore praesentium optio, rerum veritatis necessitatibus harum atque, quibusdam doloribus sapiente, consectetur maxime sunt! Exercitationem reprehenderit dolore iusto iste. Facilis.
-        Voluptate harum rem velit excepturi deserunt ullam ipsum earum, omnis voluptatem eius, quos fugit maxime expedita aspernatur unde architecto, consectetur modi consequatur perferendis eos sapiente nobis quia. Soluta, fugit doloribus.
-        Eius labore repudiandae, voluptate nostrum hic earum mollitia optio saepe sint illum. Tempore aliquam illum, ipsa inventore corrupti incidunt magnam quam nihil. Quos suscipit, iure libero quas ratione consequatur cum.
-        Quisquam ad unde recusandae at illum aperiam, animi asperiores aspernatur nobis rerum architecto quaerat, odit repellendus sequi aliquid minus ducimus dolore perferendis tenetur officiis eveniet error fugiat. Assumenda, quasi inventore.
-        Id iusto aut corporis perferendis ab dolor necessitatibus ad. Expedita unde laborum, totam excepturi cum quo maxime tempore ab harum, aperiam repellendus facilis iure optio asperiores. Voluptate, ratione! Numquam, neque.
-        Quam, fugiat! Distinctio officiis quod error voluptas enim, sint recusandae? Consequatur quis nemo odit ex rerum quod vero? Reiciendis eius ut corporis veniam quisquam in atque perferendis obcaecati eum illo!
-        Tenetur corporis eum earum assumenda nihil minus fugit, rerum porro et, quasi cupiditate! Voluptate, fugit tempore temporibus totam nulla suscipit ex animi, sint quia consectetur excepturi illo dolorem deserunt eius!
-        Pariatur, a soluta tempora optio aliquam officiis. Officiis quaerat ea omnis sapiente dolorum amet debitis nulla dolorem aliquam odit, ad maiores ex facilis maxime libero tempore eum at similique reiciendis?
-        Ex expedita dolore quibusdam nesciunt ipsam aliquam temporibus sunt rerum, iure laborum. Debitis temporibus magnam, nihil, alias placeat ad incidunt eos dolorem inventore nulla optio, nostrum ullam eius sit at!</p>
+    <section id="service" class="w-100">
+
+        <!--Div avec marge left + right / avec 3 lignes et 3 colonnes-->
+        <div class="container">
+            
+            <!--Titre-->
+            <div class="entete"> 
+                <h2>Our Services</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus obcaecati at repellendus quasi dolores epellat assumenda fugiat epellat assumenda fugiat</p>
+            </div>
+
+            <!--Div qui contient les 6 cards-->
+            <div class="card-group">
+
+                <!--1ère ligne-->
+                <div class="row"> 
+
+                    <!--Card Service 1ère colonne-->
+                    <div class="col-lg">
+                        <div class="card"> 
+                            <div class="card-head">
+                                <i class="fas fa-flask fa-3x"></i>
+                            </div>
+                            <div class="card-body mt-3">
+                                <div class="card-title h2">Lorem ipsum</div>
+                                <div class="card-subtitle mt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi libero magni adipisci placeat repellat consectetur
+                                </div>
+                            </div>   
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="vr mb-3" style="padding:0;"></div> <!--Ligne vertical-->
+
+                    <!--Card Service 2ème colonne-->
+                    <div class="col-lg">
+                        <div class="card"> 
+                            <div class="card-head">
+                                <i class="fas fa-umbrella fa-3x"></i>
+                            </div>
+                            <div class="card-body mt-3">
+                                <div class="card-title h2">Lorem ipsum</div>
+                                <div class="card-subtitle mt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi libero magni adipisci placeat repellat consectetur
+                                </div>
+                            </div>   
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="vr mb-3" style="padding:0;"></div> <!--Ligne vertical-->
+
+                    <!--Card Service 3ème colonne-->
+                    <div class="col-lg">
+                        <div class="card">  
+                            <div class="card-head">
+                                <i class="fas fa-cloud fa-3x"></i>
+                            </div>
+                            <div class="card-body mt-3">
+                                <div class="card-title h2">Lorem ipsum</div>
+                                <div class="card-subtitle mt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi libero magni adipisci placeat repellat consectetur
+                                </div>
+                            </div>   
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+
+                <!--2ème ligne-->
+                <div class="row"> 
+
+                    <!--Card Service 1ère colonne-->
+                    <div class="col-lg">
+                        <div class="card">  
+                            <div class="card-head mt-5">
+                                <i class="fas fa-coffee fa-3x"></i>
+                            </div>
+                            <div class="card-body mt-3">
+                                <div class="card-title h2">Lorem ipsum</div>
+                                <div class="card-subtitle mt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi libero magni adipisci placeat repellat consectetur
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="vr mb-3" style="padding:0;"></div> <!--Ligne vertical-->
+
+                    <!--Card Service 2ème colonne-->
+                    <div class="col-lg">
+                        <div class="card">  
+                            <div class="card-head mt-5">
+                                <i class="fas fa-database fa-3x"></i>
+                            </div>
+                            <div class="card-body mt-3">
+                                <div class="card-title h2">Lorem ipsum</div>
+                                <div class="card-subtitle mt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi libero magni adipisci placeat repellat consectetur
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+
+                    <div class="vr mb-3" style="padding:0;"></div> <!--Ligne vertical-->
+
+                    <!--Card Service 3ème colonne-->
+                    <div class="col-lg">
+                        <div class="card"> 
+                            <div class="card-head mt-5">
+                                <i class="fas fa-gift fa-3x"></i>
+                            </div>
+                            <div class="card-body mt-3">
+                                <div class="card-title h2">Lorem ipsum</div>
+                                <div class="card-subtitle mt-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident animi libero magni adipisci placeat repellat consectetur
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
     <!--About Us-->
-    <section id="about" class="bg-primary">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolore eligendi, repellat enim ullam nostrum? Accusamus eius minima eos! Quibusdam fuga atque ipsum perferendis repellat reiciendis voluptates! Nulla, error consectetur!
-        Delectus possimus, accusamus ex nobis non est debitis quis optio consequatur beatae mollitia, velit quod amet soluta laudantium enim ipsum error nisi alias a facere consectetur eveniet. Corporis, exercitationem iure.
-        Error nostrum, perferendis cum saepe tempore quae consequatur voluptate animi consectetur, itaque hic inventore necessitatibus atque dignissimos placeat corporis molestias assumenda. Autem excepturi cupiditate accusamus officiis vel ipsa tempora nam.
-        Quae illo ipsam nostrum id qui sed repellat recusandae quo excepturi blanditiis, rem mollitia, cumque eum nam maxime quisquam hic minus fugiat deleniti. Excepturi, in architecto magni labore fugit cupiditate.
-        Facilis quas facere, cum eos harum culpa rem eligendi quidem magni animi eum odit minima totam. Illo libero nobis ut provident odit quas distinctio, ab facilis dolorum optio voluptas. Ad!
-        Laborum, ea nostrum. Voluptatum odit doloribus laboriosam aspernatur ratione. Doloremque inventore praesentium optio, rerum veritatis necessitatibus harum atque, quibusdam doloribus sapiente, consectetur maxime sunt! Exercitationem reprehenderit dolore iusto iste. Facilis.
-        Voluptate harum rem velit excepturi deserunt ullam ipsum earum, omnis voluptatem eius, quos fugit maxime expedita aspernatur unde architecto, consectetur modi consequatur perferendis eos sapiente nobis quia. Soluta, fugit doloribus.
-        Eius labore repudiandae, voluptate nostrum hic earum mollitia optio saepe sint illum. Tempore aliquam illum, ipsa inventore corrupti incidunt magnam quam nihil. Quos suscipit, iure libero quas ratione consequatur cum.
-        Quisquam ad unde recusandae at illum aperiam, animi asperiores aspernatur nobis rerum architecto quaerat, odit repellendus sequi aliquid minus ducimus dolore perferendis tenetur officiis eveniet error fugiat. Assumenda, quasi inventore.
-        Id iusto aut corporis perferendis ab dolor necessitatibus ad. Expedita unde laborum, totam excepturi cum quo maxime tempore ab harum, aperiam repellendus facilis iure optio asperiores. Voluptate, ratione! Numquam, neque.
-        Quam, fugiat! Distinctio officiis quod error voluptas enim, sint recusandae? Consequatur quis nemo odit ex rerum quod vero? Reiciendis eius ut corporis veniam quisquam in atque perferendis obcaecati eum illo!
-        Tenetur corporis eum earum assumenda nihil minus fugit, rerum porro et, quasi cupiditate! Voluptate, fugit tempore temporibus totam nulla suscipit ex animi, sint quia consectetur excepturi illo dolorem deserunt eius!
-        Pariatur, a soluta tempora optio aliquam officiis. Officiis quaerat ea omnis sapiente dolorum amet debitis nulla dolorem aliquam odit, ad maiores ex facilis maxime libero tempore eum at similique reiciendis?
-        Ex expedita dolore quibusdam nesciunt ipsam aliquam temporibus sunt rerum, iure laborum. Debitis temporibus magnam, nihil, alias placeat ad incidunt eos dolorem inventore nulla optio, nostrum ullam eius sit at!</p>
+    <section id="about" class="">
+        <!--Div avec marge left + right-->
+        <div class="container">
+
+            <div class="row">
+                <!--Gauche-->
+                <div class="col-md">
+                    <h2>About us</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto cumque dolorum ducimus eius eum laborum magni necessitatibus neque, officia optio provident reiciendis rem sapiente suscipit, tempore tenetur velit! Ad architecto at aut beatae blanditiis cupiditate dolorem dolores dolorum ea earum esse est eum ex expedita fuga fugit harum in magnam magni minima minus nam nesciunt.</p>
+                </div>
+                <!--Droite-->
+                <div class="col-md h-100">
+                    <div class="box-barre h-100">
+                        <!--Barre-->
+                        <div class="barre-content">
+                            <span>Expériences utilisateurs</span>
+                            <div class="progress w-80">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    95%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
     <!--Portfolio-->
-    <section id="portfolio" class="bg-white">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolore eligendi, repellat enim ullam nostrum? Accusamus eius minima eos! Quibusdam fuga atque ipsum perferendis repellat reiciendis voluptates! Nulla, error consectetur!
-        Delectus possimus, accusamus ex nobis non est debitis quis optio consequatur beatae mollitia, velit quod amet soluta laudantium enim ipsum error nisi alias a facere consectetur eveniet. Corporis, exercitationem iure.
-        Error nostrum, perferendis cum saepe tempore quae consequatur voluptate animi consectetur, itaque hic inventore necessitatibus atque dignissimos placeat corporis molestias assumenda. Autem excepturi cupiditate accusamus officiis vel ipsa tempora nam.
-        Quae illo ipsam nostrum id qui sed repellat recusandae quo excepturi blanditiis, rem mollitia, cumque eum nam maxime quisquam hic minus fugiat deleniti. Excepturi, in architecto magni labore fugit cupiditate.
-        Facilis quas facere, cum eos harum culpa rem eligendi quidem magni animi eum odit minima totam. Illo libero nobis ut provident odit quas distinctio, ab facilis dolorum optio voluptas. Ad!
-        Laborum, ea nostrum. Voluptatum odit doloribus laboriosam aspernatur ratione. Doloremque inventore praesentium optio, rerum veritatis necessitatibus harum atque, quibusdam doloribus sapiente, consectetur maxime sunt! Exercitationem reprehenderit dolore iusto iste. Facilis.
-        Voluptate harum rem velit excepturi deserunt ullam ipsum earum, omnis voluptatem eius, quos fugit maxime expedita aspernatur unde architecto, consectetur modi consequatur perferendis eos sapiente nobis quia. Soluta, fugit doloribus.
-        Eius labore repudiandae, voluptate nostrum hic earum mollitia optio saepe sint illum. Tempore aliquam illum, ipsa inventore corrupti incidunt magnam quam nihil. Quos suscipit, iure libero quas ratione consequatur cum.
-        Quisquam ad unde recusandae at illum aperiam, animi asperiores aspernatur nobis rerum architecto quaerat, odit repellendus sequi aliquid minus ducimus dolore perferendis tenetur officiis eveniet error fugiat. Assumenda, quasi inventore.
-        Id iusto aut corporis perferendis ab dolor necessitatibus ad. Expedita unde laborum, totam excepturi cum quo maxime tempore ab harum, aperiam repellendus facilis iure optio asperiores. Voluptate, ratione! Numquam, neque.
-        Quam, fugiat! Distinctio officiis quod error voluptas enim, sint recusandae? Consequatur quis nemo odit ex rerum quod vero? Reiciendis eius ut corporis veniam quisquam in atque perferendis obcaecati eum illo!
-        Tenetur corporis eum earum assumenda nihil minus fugit, rerum porro et, quasi cupiditate! Voluptate, fugit tempore temporibus totam nulla suscipit ex animi, sint quia consectetur excepturi illo dolorem deserunt eius!
-        Pariatur, a soluta tempora optio aliquam officiis. Officiis quaerat ea omnis sapiente dolorum amet debitis nulla dolorem aliquam odit, ad maiores ex facilis maxime libero tempore eum at similique reiciendis?
-        Ex expedita dolore quibusdam nesciunt ipsam aliquam temporibus sunt rerum, iure laborum. Debitis temporibus magnam, nihil, alias placeat ad incidunt eos dolorem inventore nulla optio, nostrum ullam eius sit at!</p>
+    <section id="portfolio" class="">
+        <div class="container-fluid"> <!--Prend toute la width de la page-->
+            <!--Titre-->
+            <div class="container entete"> <!--la classe container se centre sur la page (marges left/right)-->
+                <h2>Our Portfolio</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus obcaecati at repellendus quasi dolores epellat assumenda fugiat epellat assumenda fugiat</p>
+            </div>
+
+            <div class="wrap">
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/1.jpg" alt="">
+                    </div>
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/2.jpg" alt="">
+                    </div>
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/3.jpg" alt="">
+                    </div>
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/4.jpg" alt="">
+                    </div>
+               
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/5.jpg" alt="">
+                    </div>
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/6.jpg" alt="">
+                    </div>
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/7.jpg" alt="">
+                    </div>
+                    <!--Image-->
+                    <div class="box-image">
+                        <img src="assets/images/portfolio/8.jpg" alt="">
+                    </div>
+                
+            </div>
+
+        </div>
     </section>
 
     <!--Team-->
-    <section id="team" class="bg-warning">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolore eligendi, repellat enim ullam nostrum? Accusamus eius minima eos! Quibusdam fuga atque ipsum perferendis repellat reiciendis voluptates! Nulla, error consectetur!
-        Delectus possimus, accusamus ex nobis non est debitis quis optio consequatur beatae mollitia, velit quod amet soluta laudantium enim ipsum error nisi alias a facere consectetur eveniet. Corporis, exercitationem iure.
-        Error nostrum, perferendis cum saepe tempore quae consequatur voluptate animi consectetur, itaque hic inventore necessitatibus atque dignissimos placeat corporis molestias assumenda. Autem excepturi cupiditate accusamus officiis vel ipsa tempora nam.
-        Quae illo ipsam nostrum id qui sed repellat recusandae quo excepturi blanditiis, rem mollitia, cumque eum nam maxime quisquam hic minus fugiat deleniti. Excepturi, in architecto magni labore fugit cupiditate.
-        Facilis quas facere, cum eos harum culpa rem eligendi quidem magni animi eum odit minima totam. Illo libero nobis ut provident odit quas distinctio, ab facilis dolorum optio voluptas. Ad!
-        Laborum, ea nostrum. Voluptatum odit doloribus laboriosam aspernatur ratione. Doloremque inventore praesentium optio, rerum veritatis necessitatibus harum atque, quibusdam doloribus sapiente, consectetur maxime sunt! Exercitationem reprehenderit dolore iusto iste. Facilis.
-        Voluptate harum rem velit excepturi deserunt ullam ipsum earum, omnis voluptatem eius, quos fugit maxime expedita aspernatur unde architecto, consectetur modi consequatur perferendis eos sapiente nobis quia. Soluta, fugit doloribus.
-        Eius labore repudiandae, voluptate nostrum hic earum mollitia optio saepe sint illum. Tempore aliquam illum, ipsa inventore corrupti incidunt magnam quam nihil. Quos suscipit, iure libero quas ratione consequatur cum.
-        Quisquam ad unde recusandae at illum aperiam, animi asperiores aspernatur nobis rerum architecto quaerat, odit repellendus sequi aliquid minus ducimus dolore perferendis tenetur officiis eveniet error fugiat. Assumenda, quasi inventore.
-        Id iusto aut corporis perferendis ab dolor necessitatibus ad. Expedita unde laborum, totam excepturi cum quo maxime tempore ab harum, aperiam repellendus facilis iure optio asperiores. Voluptate, ratione! Numquam, neque.
-        Quam, fugiat! Distinctio officiis quod error voluptas enim, sint recusandae? Consequatur quis nemo odit ex rerum quod vero? Reiciendis eius ut corporis veniam quisquam in atque perferendis obcaecati eum illo!
-        Tenetur corporis eum earum assumenda nihil minus fugit, rerum porro et, quasi cupiditate! Voluptate, fugit tempore temporibus totam nulla suscipit ex animi, sint quia consectetur excepturi illo dolorem deserunt eius!
-        Pariatur, a soluta tempora optio aliquam officiis. Officiis quaerat ea omnis sapiente dolorum amet debitis nulla dolorem aliquam odit, ad maiores ex facilis maxime libero tempore eum at similique reiciendis?
-        Ex expedita dolore quibusdam nesciunt ipsam aliquam temporibus sunt rerum, iure laborum. Debitis temporibus magnam, nihil, alias placeat ad incidunt eos dolorem inventore nulla optio, nostrum ullam eius sit at!</p>
+    <section id="team" class="">
+        <!--Div avec marge left + right-->
+        <div class="container">
+            
+            <!--Titre-->
+            <div class="entete"> 
+                <h2>Our Team</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus obcaecati at repellendus quasi dolores epellat assumenda fugiat epellat assumenda fugiat</p>
+            </div>
+
+              <!--Div qui contient les 4 cards-->
+            <div class="card-group">
+
+                <!--Card Team 1-->
+                <div class="col-lg">
+                    <div class="card"> 
+                        <div class="card-head">
+                            <img class="card-img" src="assets/images/team/1.jpg" alt="">
+                        </div>
+                        <div class="card-body mt-3">
+                            <div class="card-title h2">Lorem ipsum</div>
+                            <p>CEO & Founder</p>
+                            <div class="card-subtitle mt-3 mb-5">
+                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </div>
+                            <div class="picto">
+                                <i class="fab fa-facebook-f pad"></i>
+                                <i class="fab fa-twitter pad"></i>
+                                <i class="fab fa-linkedin-in pad"></i>
+                                <i class="fas fa-globe pad"></i>
+                                <i class="fas fa-wifi pad"></i>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+                <!--Card Team 2-->
+                <div class="col-lg">
+                    <div class="card"> 
+                        <div class="card-head">
+                            <img class="card-img" src="assets/images/team/2.jpg" alt="">
+                        </div>
+                        <div class="card-body mt-3">
+                            <div class="card-title h2">Lorem ipsum</div>
+                            <p>CEO & Founder</p>
+                            <div class="card-subtitle mt-3 mb-5">
+                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </div>
+                            <div class="picto">
+                                <i class="fab fa-facebook-f pad"></i>
+                                <i class="fab fa-twitter pad"></i>
+                                <i class="fab fa-linkedin-in pad"></i>
+                                <i class="fas fa-globe pad"></i>
+                                <i class="fas fa-wifi pad"></i>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+                <!--Card Team 3-->
+                <div class="col-lg">
+                    <div class="card"> 
+                        <div class="card-head">
+                            <img class="card-img" src="assets/images/team/3.jpg" alt="">
+                        </div>
+                        <div class="card-body mt-3">
+                            <div class="card-title h2">Lorem ipsum</div>
+                            <p>CEO & Founder</p>
+                            <div class="card-subtitle mt-3 mb-5">
+                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </div>
+                            <div class="picto">
+                                <i class="fab fa-facebook-f pad"></i>
+                                <i class="fab fa-twitter pad"></i>
+                                <i class="fab fa-linkedin-in pad"></i>
+                                <i class="fas fa-globe pad"></i>
+                                <i class="fas fa-wifi pad"></i>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+                <!--Card Team 4-->
+                <div class="col-lg">
+                    <div class="card"> 
+                        <div class="card-head">
+                            <img class="card-img" src="assets/images/team/4.jpg" alt="">
+                        </div>
+                        <div class="card-body mt-3">
+                            <div class="card-title h2">Lorem ipsum</div>
+                            <p>CEO & Founder</p>
+                            <div class="card-subtitle mt-3 mb-5">
+                                Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            </div>
+                            <div class="picto">
+                                <i class="fab fa-facebook-f pad"></i>
+                                <i class="fab fa-twitter pad"></i>
+                                <i class="fab fa-linkedin-in pad"></i>
+                                <i class="fas fa-globe pad"></i>
+                                <i class="fas fa-wifi pad"></i>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
     </section>
 
     <!--Blog-->
     <section id="blog" class="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolore eligendi, repellat enim ullam nostrum? Accusamus eius minima eos! Quibusdam fuga atque ipsum perferendis repellat reiciendis voluptates! Nulla, error consectetur!
-        Delectus possimus, accusamus ex nobis non est debitis quis optio consequatur beatae mollitia, velit quod amet soluta laudantium enim ipsum error nisi alias a facere consectetur eveniet. Corporis, exercitationem iure.
-        Error nostrum, perferendis cum saepe tempore quae consequatur voluptate animi consectetur, itaque hic inventore necessitatibus atque dignissimos placeat corporis molestias assumenda. Autem excepturi cupiditate accusamus officiis vel ipsa tempora nam.
-        Quae illo ipsam nostrum id qui sed repellat recusandae quo excepturi blanditiis, rem mollitia, cumque eum nam maxime quisquam hic minus fugiat deleniti. Excepturi, in architecto magni labore fugit cupiditate.
-        Facilis quas facere, cum eos harum culpa rem eligendi quidem magni animi eum odit minima totam. Illo libero nobis ut provident odit quas distinctio, ab facilis dolorum optio voluptas. Ad!
-        Laborum, ea nostrum. Voluptatum odit doloribus laboriosam aspernatur ratione. Doloremque inventore praesentium optio, rerum veritatis necessitatibus harum atque, quibusdam doloribus sapiente, consectetur maxime sunt! Exercitationem reprehenderit dolore iusto iste. Facilis.
-        Voluptate harum rem velit excepturi deserunt ullam ipsum earum, omnis voluptatem eius, quos fugit maxime expedita aspernatur unde architecto, consectetur modi consequatur perferendis eos sapiente nobis quia. Soluta, fugit doloribus.
-        Eius labore repudiandae, voluptate nostrum hic earum mollitia optio saepe sint illum. Tempore aliquam illum, ipsa inventore corrupti incidunt magnam quam nihil. Quos suscipit, iure libero quas ratione consequatur cum.
-        Quisquam ad unde recusandae at illum aperiam, animi asperiores aspernatur nobis rerum architecto quaerat, odit repellendus sequi aliquid minus ducimus dolore perferendis tenetur officiis eveniet error fugiat. Assumenda, quasi inventore.
-        Id iusto aut corporis perferendis ab dolor necessitatibus ad. Expedita unde laborum, totam excepturi cum quo maxime tempore ab harum, aperiam repellendus facilis iure optio asperiores. Voluptate, ratione! Numquam, neque.
-        Quam, fugiat! Distinctio officiis quod error voluptas enim, sint recusandae? Consequatur quis nemo odit ex rerum quod vero? Reiciendis eius ut corporis veniam quisquam in atque perferendis obcaecati eum illo!
-        Tenetur corporis eum earum assumenda nihil minus fugit, rerum porro et, quasi cupiditate! Voluptate, fugit tempore temporibus totam nulla suscipit ex animi, sint quia consectetur excepturi illo dolorem deserunt eius!
-        Pariatur, a soluta tempora optio aliquam officiis. Officiis quaerat ea omnis sapiente dolorum amet debitis nulla dolorem aliquam odit, ad maiores ex facilis maxime libero tempore eum at similique reiciendis?
-        Ex expedita dolore quibusdam nesciunt ipsam aliquam temporibus sunt rerum, iure laborum. Debitis temporibus magnam, nihil, alias placeat ad incidunt eos dolorem inventore nulla optio, nostrum ullam eius sit at!</p>
+        <!--Div avec marge left + right-->
+        <div class="container">
+            
+            <!--Titre-->
+            <div class="entete"> 
+                <h2>Blog Posts</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus obcaecati at repellendus quasi dolores epellat assumenda fugiat epellat assumenda fugiat</p>
+            </div>
+
+              <!--Div qui contient les 3 cards-->
+            <div class="card-group">
+
+                <!--Card Blog 1-->
+                <div class="col-lg">
+                    <div class="card"> 
+                        <div class="card-head">
+                            <img class="card-img" src="assets/images/blog/1.jpg" alt="">
+                            <div class="span">
+                                <div class="post"><i class="far fa-comments"></i> 3 comments</div>
+                                <div class="post"><i class="fas fa-heart"></i> 0 likes</div>
+                            </div>
+                            <div class="picto-post"><i class="fas fa-pen bg-info p-2"></i></div> 
+                        </div>
+                        <div class="card-body mt-3">
+                            <div class="card-title h2 text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                            <p>June 26, 2014 in <span>Photography</span></p>
+                            <div class="hr"><hr class="bg-info"></div>
+                            <div class="card-subtitle mt-3 mb-5">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+                <!--Card Blog 2-->
+                <div class="col-lg">
+                    <div class="card"> 
+                        <div class="card-head">
+                            <img class="card-img" src="assets/images/blog/2.jpg" alt="">
+                            <div class="span">
+                                <div class="post"><i class="far fa-comments"></i> 3 comments</div>
+                                <div class="post"><i class="fas fa-heart"></i> 0 likes</div>
+                            </div>
+                            <div class="picto-post"><i class="fas fa-pen bg-info p-2"></i></div> 
+                        </div>
+                        <div class="card-body mt-3">
+                            <div class="card-title h2 text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                            <p>June 26, 2014 in <span>Photography</span></p>
+                            <div class="hr"><hr class="bg-info"></div>
+                            <div class="card-subtitle mt-3 mb-5">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+                <!--Card Blog 3-->
+                <div class="col-lg">
+                    <div class="card"> 
+                        <div class="card-head">
+                            <img class="card-img" src="assets/images/blog/3.jpg" alt="">
+                            <div class="span">
+                                <div class="post"><i class="far fa-comments"></i> 3 comments</div>
+                                <div class="post"><i class="fas fa-heart"></i> 0 likes</div>
+                            </div>
+                            <div class="picto-post"><i class="fas fa-pen bg-info p-2"></i></div> 
+                        </div>
+                        <div class="card-body mt-3">
+                            <div class="card-title h2 text-info">Lorem ipsum dolor sit amet consectetur adipisicing elit</div>
+                            <p>June 26, 2014 in <span>Photography</span></p>
+                            <div class="hr"><hr class="bg-info"></div>
+                            <div class="card-subtitle mt-3 mb-5">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bouton"><button><i class="fas fa-redo"></i> Load more</button></div>
     </section>
 
     <!--Contact-->
-    <section id="contact" class="bg-success">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolore eligendi, repellat enim ullam nostrum? Accusamus eius minima eos! Quibusdam fuga atque ipsum perferendis repellat reiciendis voluptates! Nulla, error consectetur!
-        Delectus possimus, accusamus ex nobis non est debitis quis optio consequatur beatae mollitia, velit quod amet soluta laudantium enim ipsum error nisi alias a facere consectetur eveniet. Corporis, exercitationem iure.
-        Error nostrum, perferendis cum saepe tempore quae consequatur voluptate animi consectetur, itaque hic inventore necessitatibus atque dignissimos placeat corporis molestias assumenda. Autem excepturi cupiditate accusamus officiis vel ipsa tempora nam.
-        Quae illo ipsam nostrum id qui sed repellat recusandae quo excepturi blanditiis, rem mollitia, cumque eum nam maxime quisquam hic minus fugiat deleniti. Excepturi, in architecto magni labore fugit cupiditate.
-        Facilis quas facere, cum eos harum culpa rem eligendi quidem magni animi eum odit minima totam. Illo libero nobis ut provident odit quas distinctio, ab facilis dolorum optio voluptas. Ad!
-        Laborum, ea nostrum. Voluptatum odit doloribus laboriosam aspernatur ratione. Doloremque inventore praesentium optio, rerum veritatis necessitatibus harum atque, quibusdam doloribus sapiente, consectetur maxime sunt! Exercitationem reprehenderit dolore iusto iste. Facilis.
-        Voluptate harum rem velit excepturi deserunt ullam ipsum earum, omnis voluptatem eius, quos fugit maxime expedita aspernatur unde architecto, consectetur modi consequatur perferendis eos sapiente nobis quia. Soluta, fugit doloribus.
-        Eius labore repudiandae, voluptate nostrum hic earum mollitia optio saepe sint illum. Tempore aliquam illum, ipsa inventore corrupti incidunt magnam quam nihil. Quos suscipit, iure libero quas ratione consequatur cum.
-        Quisquam ad unde recusandae at illum aperiam, animi asperiores aspernatur nobis rerum architecto quaerat, odit repellendus sequi aliquid minus ducimus dolore perferendis tenetur officiis eveniet error fugiat. Assumenda, quasi inventore.
-        Id iusto aut corporis perferendis ab dolor necessitatibus ad. Expedita unde laborum, totam excepturi cum quo maxime tempore ab harum, aperiam repellendus facilis iure optio asperiores. Voluptate, ratione! Numquam, neque.
-        Quam, fugiat! Distinctio officiis quod error voluptas enim, sint recusandae? Consequatur quis nemo odit ex rerum quod vero? Reiciendis eius ut corporis veniam quisquam in atque perferendis obcaecati eum illo!
-        Tenetur corporis eum earum assumenda nihil minus fugit, rerum porro et, quasi cupiditate! Voluptate, fugit tempore temporibus totam nulla suscipit ex animi, sint quia consectetur excepturi illo dolorem deserunt eius!
-        Pariatur, a soluta tempora optio aliquam officiis. Officiis quaerat ea omnis sapiente dolorum amet debitis nulla dolorem aliquam odit, ad maiores ex facilis maxime libero tempore eum at similique reiciendis?
-        Ex expedita dolore quibusdam nesciunt ipsam aliquam temporibus sunt rerum, iure laborum. Debitis temporibus magnam, nihil, alias placeat ad incidunt eos dolorem inventore nulla optio, nostrum ullam eius sit at!</p>
+    <section id="contact" class="">
+        <!--Div avec marge left + right-->
+        <div class="container">
+            
+            <!--Titre-->
+            <div class="entete"> 
+                <h2>Contact us</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus obcaecati at repellendus quasi dolores epellat assumenda fugiat epellat assumenda fugiat</p>
+            </div>
+            <div class="row w-100 h-100 d-flex justify-content-between">
+                <div class="col mx-5 w-50 h-100">
+                    <form class="d-flex flex-wrap">
+                        <div class="d-flex justify-content-between w-100">
+                            <input type="text" placeholder="Name" class="w-45 px-5 py-2">
+                            <input type="text" placeholder="Name" class="w-45 px-5 py-2">
+                        </div>
+                        <input type="text" placeholder="Name" class="w-100">
+                        <input type="textarea" placeholder="Name" class="w-100">
+                        <button type="submit" class="bg-info"> Send Now</button>
+
+                    </form>
+                </div>
+                <div class="col mx-5 w-50">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus obcaecati at repellendus quasi dolores Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti necessitatibus obcaecati at repellendus quasi dolores epellat assumenda fugiat epellat assumenda fugiat</p>
+                    <address>
+                            <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                            <a href="tel:+13115552368">(311) 555-2368</a>
+                            <a href="mailto:jim@rock.com">jim@rock.com</a><br>
+                            <a href="tel:+13115552368">(311) 555-2368</a>
+                    </address>
+                </div>
+            </div>
     </section>
 
 

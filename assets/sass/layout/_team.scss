@@ -1,0 +1,51 @@
+#team {
+    .card {
+        padding: 2rem;
+        // width: 20%;
+        text-align: center;
+        border: none;
+
+        p {
+            color: grey;
+        }
+
+        .picto {
+            color : white;
+            // Disposition flex
+            display: flex;
+            justify-content: space-evenly;
+
+            .pad {
+                padding: 1rem 1rem;
+                background-color: grey;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }    
+        }
+
+        /**** La couleurs des pictos changent quand survol de la card ****/
+        &:hover{
+            .fa-facebook-f {
+                background-color: #627aad;
+            };
+        
+            .fa-twitter {
+                background-color: #2ac6f7;
+            };
+
+            .fa-linkedin-in {
+                background-color: #358acd;
+            };
+
+            .fa-globe {
+                background-color: #ff7ca8;
+            };
+
+            .fa-wifi {
+                background-color: #ff8933;
+            }
+        }
+    }
+}

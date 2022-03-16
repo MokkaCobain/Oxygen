@@ -1,8 +1,35 @@
 @import "base/colors";
 @import "base/font";
+@import "base/titre";
 @import "base/reset";
 @import "components/carousel";
 @import "components/nav";
-@import "layout/service"
+@import "layout/service";
+@import "layout/about";
+@import "layout/portfolio";
+@import "layout/team";
+@import "layout/blog";
+
+
+
+
+
+/************* TITRES DE SECTION *************/
+
+.entete {
+        @include divTitre;
+
+    h2 {
+        @include titre; 
+    }
+
+    p {
+        @include soustitre;
+
+        @media screen and (max-width: 850px) {
+            padding: 0 0.1rem;
+        }
+    }
+}
 
 

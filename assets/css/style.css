@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Open+Sans:wght@300;500;600;700;800&display=swap");
+/**** PROPRIETES POUR TITRES DE SECTION sauf ABOUT ****/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Open+Sans:wght@300;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Open+Sans:wght@300;500;600;700;800&display=swap");
 html, body, div, span, applet, object, iframe,
@@ -64,9 +65,8 @@ body {
 /******** Dimension et position ********/
 #accueil {
   position: relative;
-  width: 100%;
-  height: 85vh;
-  /******** LES ANIMATIONS TEXTE CAROUSEL *********/
+  width: 100vw;
+  height: 100vh;
 }
 #accueil #app-carousel {
   position: relative;
@@ -77,28 +77,55 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  /******** Texte ********/
-}
-#accueil #app-carousel .carousel-inner .carousel-item {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 #accueil #app-carousel .carousel-inner > * {
   position: relative;
   width: 100%;
   height: 100%;
 }
-#accueil .titre #titre {
-  animation-duration: 15s;
+#accueil #app-carousel .carousel-inner .carousel-item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+}
+#accueil #app-carousel .carousel-inner .carousel-item .carousel-titre {
+  position: absolute;
+  top: 45%;
+  right: 15%;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  /******** Texte ********/
+  color: #fafafa;
+  text-transform: uppercase;
+}
+#accueil #app-carousel .carousel-inner .carousel-item .carousel-titre h1 {
+  font-size: 5.6rem;
+  font-weight: 800;
+  /**** Animation Titre ****/
+  animation-duration: 2s;
   animation-timing-function: ease-in-out;
   animation-name: gaucheVersDroite;
 }
+#accueil #app-carousel .carousel-inner .carousel-item .carousel-titre h1 span {
+  color: #0288d1;
+}
+#accueil #app-carousel .carousel-inner .carousel-item .carousel-titre p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  /**** Animation Sousitre ****/
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-name: droiteVersGauche;
+}
 
-/* DEFINIR ANIMATION */
+/*********** DEFINIR ANIMATION ***********/
 @keyframes gaucheVersDroite {
   0% {
-    transform: translateX(-20rem);
+    transform: translateX(-200rem);
   }
   70% {
     transform: translateX(1rem);
@@ -107,7 +134,261 @@ body {
     transform: translateX(0);
   }
 }
+@keyframes droiteVersGauche {
+  0% {
+    transform: translateX(200rem);
+  }
+  70% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+/******** Images du Carousel ********/
+#slideUne {
+  background-image: url(https://images.unsplash.com/photo-1640622308122-b1b0f3cd5a7f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+}
+
+#slideDeux {
+  background-image: url(https://images.unsplash.com/photo-1640622333305-9c0d3c9b18a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+}
+
+#slideTrois {
+  background-image: url(https://images.unsplash.com/photo-1627174003373-1892aff35f9d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+}
+
 #nav {
   top: sticky;
   width: 100%;
+}
+
+#service .container {
+  padding: 0;
+}
+#service .container .card {
+  border: none;
+  /******** RESPONSIVE ********/
+}
+#service .container .card .card-head {
+  display: flex;
+  justify-content: center;
+}
+#service .container .card .card-head .fas {
+  padding: 3rem 3rem;
+  color: white;
+  background-color: #0dcaf0;
+}
+#service .container .card .card-head .fas:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#service .container .card .card-body {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  #service .container .card hr {
+    opacity: 0;
+  }
+}
+@media screen and (max-width: 992px) {
+  #service .container .vr {
+    opacity: 0;
+  }
+}
+
+#about {
+  position: relative;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  background-image: linear-gradient(rgba(181, 112, 112, 0.6), rgba(112, 122, 181, 0.6)), url(https://images.unsplash.com/photo-1646058536666-7d4fdf84c0f6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+  background-size: cover;
+  /*** Effet parallaxe ***/
+  background-attachment: fixed;
+}
+#about .container {
+  color: white;
+  display: flex;
+}
+#about .container h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+#about .container p {
+  font-weight: 300;
+}
+#about .container .box-barre .barre-content {
+  height: 10%;
+}
+#about .container .box-barre .barre-content .progress {
+  height: 100%;
+}
+#about .container .box-barre .barre-content .progress .progress-bar {
+  width: 95%;
+  object-fit: contain;
+  transition: width 0.6s ease;
+  /*Attribuer une animation */
+  background-color: #028fcc;
+  animation: progesbar 4s ease 1s 1 normal forwards;
+}
+
+/**** ANIMATIONS PROGRESS BAR ****/
+@keyframes progesbar {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+#portfolio .container-fluid {
+  padding: 0;
+}
+#portfolio .container-fluid .wrap {
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+#portfolio .container-fluid .wrap .box-image {
+  width: 25%;
+  /******** RESPONSIVE ********/
+}
+#portfolio .container-fluid .wrap .box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#portfolio .container-fluid .wrap .box-image img:hover {
+  filter: brightness(50%);
+}
+@media screen and (max-width: 850px) {
+  #portfolio .container-fluid .wrap .box-image {
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 850px) {
+  #portfolio .container-fluid .wrap {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+#team .card {
+  padding: 2rem;
+  text-align: center;
+  border: none;
+  /**** La couleurs des pictos changent quand survol de la card ****/
+}
+#team .card p {
+  color: grey;
+}
+#team .card .picto {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+}
+#team .card .picto .pad {
+  padding: 1rem 1rem;
+  background-color: grey;
+}
+#team .card .picto .pad:hover {
+  transform: scale(1.2);
+}
+#team .card:hover .fa-facebook-f {
+  background-color: #627aad;
+}
+#team .card:hover .fa-twitter {
+  background-color: #2ac6f7;
+}
+#team .card:hover .fa-linkedin-in {
+  background-color: #358acd;
+}
+#team .card:hover .fa-globe {
+  background-color: #ff7ca8;
+}
+#team .card:hover .fa-wifi {
+  background-color: #ff8933;
+}
+
+#blog .card {
+  padding: 2rem;
+  border: none;
+}
+#blog .card .card-head {
+  position: relative;
+}
+#blog .card .card-head .span {
+  width: 60%;
+  position: absolute;
+  left: 3%;
+  top: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#blog .card .card-head .span .post {
+  width: 100%;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.3rem;
+}
+#blog .card .card-head .picto-post {
+  width: 60%;
+  position: absolute;
+  left: 90%;
+  bottom: 85%;
+  color: white;
+}
+#blog .card p {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  margin: 2rem auto;
+}
+#blog .card p span {
+  font-weight: bold;
+}
+#blog .card .hr {
+  width: 3%;
+}
+#blog .card .hr hr {
+  height: 3px;
+}
+#blog .bouton {
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+}
+#blog .bouton button {
+  padding: 1rem 15rem;
+  background-color: white;
+  color: #757575;
+  text-transform: uppercase;
+  border: none;
+}
+#blog .bouton button:hover {
+  background-color: #0dcaf0;
+}
+
+/************* TITRES DE SECTION *************/
+.entete {
+  align-self: center;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+.entete h2 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+.entete p {
+  font-weight: 300;
+  padding: 0 20rem;
+}
+@media screen and (max-width: 850px) {
+  .entete p {
+    padding: 0 0.1rem;
+  }
 }
